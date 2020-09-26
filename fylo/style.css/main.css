@@ -1,0 +1,179 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/bg-desktop.png");
+    background-position: 0 45vh;
+    background-repeat: no-repeat;
+    background-color: hsl(229, 57%, 11%);
+    font-family: "https://fonts.google.com/specimen/Raleway";
+}
+#bodywrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+#box1{
+    background-color: hsl(228, 56%, 26%);
+    position: absolute;
+    top: 200px;
+    left: 15%;
+    border-radius: 5px;
+    border-top-right-radius: 40%;
+    width: 20%;
+}
+#box1wrap{
+    padding: 20px 25px 15px 15px;
+    
+}
+img#logo{
+    width: 60%;
+}
+#fileicons{
+    display: flex;
+    margin-top: 15px;
+}
+.fileboxes{
+    background-color: hsl(229, 57%, 11%);
+    width: 10%;
+    margin-right: 10px;
+    padding: 10px;
+    justify-content: center;
+    border-radius: 5px;
+}
+.fileboxes img{
+    width: 100%;
+}
+#box2indicator{
+    position: relative;
+    top: 200px;
+    left: 81%;
+    text-align: center;
+    width: 100px;
+    padding: 5px;
+    height: 50px;
+    background-color: white;
+    border-radius: 5px;
+    z-index: 100;
+}
+#box2indicator p{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 700;
+}
+#box2indicator span:nth-child(1){
+    font-weight: 200;
+}
+#box2indicator::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 15px solid white;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-top: 15px solid white;
+    top: 80%;
+    left: 72%;
+}
+#box2main{
+    background-color: hsl(228, 56%, 26%);
+    position: absolute;
+    top: 230px;
+    left: 40%;
+    width: 50%;
+    border-radius: 5px;
+    padding: 10px;
+}
+#box2main p{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    width: 90%;
+}
+#indicatorbar{
+    width: 99%;
+    background-color: hsl(229, 57%, 11%);
+    margin: auto;
+    height: 10px;
+    border-radius: 10px;
+}
+#useddatabar{
+    width: 70%;
+    height: 100%;
+    border-radius: inherit;
+    background: -webkit-linear-gradient(left, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+}
+#whitebutton{
+    position: relative;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    left: 97%;
+}
+#sbp{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 1040px){
+    body{
+        background-image: url("../images/bg-mobile.png");
+        background-position: 0 0;
+        background-size: 100% 100vh;
+        background-repeat: no-repeat;
+        background-color: hsl(229, 57%, 11%);
+        font-family: "https://fonts.google.com/specimen/Raleway";
+    }
+}
+@media(max-width: 768px){
+    body{
+        background-image: url("../images/bg-mobile.png");
+        background-size: 100% 110vh;
+        background-position: 0 0;
+    }
+    #box1{
+        background-color: hsl(228, 56%, 26%);
+        position: static;
+        border-radius: 5px;
+        margin: 100px auto;
+        border-top-right-radius: 40%;
+        width: 80%;
+        padding: 10px;
+    }
+    #box2indicator{
+        position: relative;
+        top: 50px;
+        left: 20%;
+        text-align: center;
+        width: 53%;
+        height: 50px;
+        background-color: white;
+        border-radius: 5px;
+        z-index: 100;
+    }
+    #box2indicator::before{
+        display: none;
+    }
+    #box2indicator p{
+        width: 100%;
+        font-size: 30px;
+        margin-top: none;
+        font-weight: 700;
+        margin: 10px auto;
+    }
+    #box2indicator span{
+        font-size: 14px;
+        color: hsl(229, 7%, 55%);
+    }
+    #box2main{
+        background-color: hsl(228, 56%, 26%);
+        position: relative;
+        left: 0;
+        top: -120px;
+        margin: 0px auto;
+        width: 80%;
+        border-radius: 5px;
+        padding: 10px;
+        padding-bottom: 50px;
+    }
+}
