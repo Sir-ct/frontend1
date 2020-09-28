@@ -98,7 +98,7 @@ img{
         padding: 0;
         background-image: url("../images/pattern-bg.svg");
         background-repeat: no-repeat;
-        background-size: 100% 35%;
+        background-size: 100% 40%;
     }
     #slidercontainer{
         width: 200%;
@@ -106,7 +106,13 @@ img{
         display: flex;
     }
     #slidercover{
-        height: auto;
+        width: 90%;
+        height: 1200px;
+        overflow: hidden;
+        margin: 50px auto;
+        background: url("../images/pattern-curve.svg");
+        background-repeat: no-repeat;
+        background-position: 0 100%;
     }
     .slidercontents{
         width: 50%;
@@ -128,17 +134,33 @@ img{
     }
     .sliderimg{
         position: relative;
-        top: -450px;
+        top: -350px;
         margin: 0px auto;
         width: 70%;
         box-shadow: 2px 2px 7px hsl(240, 38%, 20%); 
     }
     #si2{
-        transform: translate(0px, -35px);
+        transform: translate(0px, -0px);
     }
     #nextcover{
-        top: -670px;
+        top: -520px;
         left: 45%;
+    }
+}
+@media(max-width: 420px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/pattern-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 25%;
+    }
+    .sliderimg{
+        position: relative;
+        top: -580px;
+        margin: 0px auto;
+        width: 70%;
+        box-shadow: 2px 2px 7px hsl(240, 38%, 20%); 
     }
 }
 @media(max-width: 375px){
@@ -147,7 +169,16 @@ img{
         padding: 0;
         background-image: url("../images/pattern-bg.svg");
         background-repeat: no-repeat;
-        background-size: 100% 30%;
+        background-size: 100% 25%;
+    }
+    #slidercover{
+        width: 90%;
+        height: 1300px;
+        overflow: hidden;
+        margin: 50px auto;
+        background: url("../images/pattern-curve.svg");
+        background-repeat: no-repeat;
+        background-position: 0 100%;
     }
     .sliderimg{
         position: relative;
@@ -157,7 +188,7 @@ img{
         box-shadow: 2px 2px 7px hsl(240, 38%, 20%); 
     }
     #si2{
-        transform: translate(0px, -99px);
+        transform: translate(0px, -85px);
     }
     #nextcover{
         top: -750px;
@@ -173,5 +204,67 @@ img{
         width: 50%;
         padding: 25px;
     
+    }
+}
+@media(max-width: 320px){
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("../images/pattern-bg.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 22%;
+    }
+    #slidercover{
+        width: 90%;
+        height: 1400px;
+        overflow: hidden;
+        margin: 50px auto;
+        background: url("../images/pattern-curve.svg");
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+    }
+    .sliderimg{
+        position: relative;
+        top: -1000px;
+        margin: 0px auto;
+        width: 80%;
+        box-shadow: 2px 2px 7px hsl(240, 38%, 20%); 
+    }
+    #slidercontainer{
+        width: 200%;
+        height: 1300px;
+        display: flex;
+    }
+    #nextcover{
+        top: -1100px;
+        left: 40%;
+    }
+    @media(max-width: 290px){
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("../images/pattern-bg.svg");
+            background-repeat: no-repeat;
+            background-size: 100% 20%;
+        }
+        #slidercover{
+            width: 90%;
+            height: 1600px;
+            overflow: hidden;
+            margin: 50px auto;
+            background: url("../images/pattern-curve.svg");
+            background-repeat: no-repeat;
+            background-position: 0 100%;
+        }
+        .sliderimg{
+            position: relative;
+            top: -1200px;
+            margin: 0px auto;
+            width: 80%;
+            box-shadow: 2px 2px 7px hsl(240, 38%, 20%); 
+        }
+        #si2{
+            transform: translate(0px, 50px);
+        }
     }
 }
